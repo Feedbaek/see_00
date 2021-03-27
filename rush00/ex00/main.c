@@ -6,13 +6,13 @@
 /*   By: minskim2 <minskim2@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/27 20:34:17 by minskim2          #+#    #+#             */
-/*   Updated: 2021/03/27 21:38:59 by minskim2         ###   ########.fr       */
+/*   Updated: 2021/03/27 21:46:05 by minskim2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	rush(int x, int y);
 
-int	main(void)
+int		main(void)
 {
 	rush(5, 5);
 	return (0);
