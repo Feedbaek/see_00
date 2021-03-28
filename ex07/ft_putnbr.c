@@ -1,18 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: minskim2 <minskim2@student.42seoul.kr      +#+  +:+       +#+        */
+/*   By: minskim2 <minskim2@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/27 15:16:43 by minskim2          #+#    #+#             */
-/*   Updated: 2021/03/27 15:17:30 by minskim2         ###   ########.fr       */
+/*   Created: 2021/03/28 17:45:36 by minskim2          #+#    #+#             */
+/*   Updated: 2021/03/29 03:00:08 by minskim2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchaar(char c)
+void	ft_putnbr(int nb)
 {
-	write(1, &c, 1);
+	char o;
+
+	if (nb >= 0)
+	{
+		o = '0' + nb % 10;
+		if (nb / 10 != 0)
+			ft_putnbr(nb / 10);
+		write(1, &o, 1);
+	}
+	else
+	{
+		write(1, &"-", 1);
+		o = '0' - nb % 10;
+		if (-(nb / 10) != 0)
+			ft_putnbr(-(nb / 10));
+		write(1, &o, 1);
+	}
 }

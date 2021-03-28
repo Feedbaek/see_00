@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: minskim2 <minskim2@student.42seoul.kr      +#+  +:+       +#+        */
+/*   By: minskim2 <minskim2@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/27 20:34:17 by minskim2          #+#    #+#             */
-/*   Updated: 2021/03/27 21:46:05 by minskim2         ###   ########.fr       */
+/*   Created: 2021/03/27 16:22:57 by minskim2          #+#    #+#             */
+/*   Updated: 2021/03/28 22:59:04 by minskim2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
+#include <unistd.h>
 
-int		main(void)
+void	ft_print_reverse_alphabet(void)
 {
-	rush(5, 5);
-	return (0);
+	char z;
+
+	z = 'z';
+	while (z >= 'a')
+	{
+		write(1, &z, 1);
+		z--;
+	}
 }

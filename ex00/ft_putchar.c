@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: minskim2 <minskim2@student.42seoul.kr      +#+  +:+       +#+        */
+/*   By: minskim2 <minskim2@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/27 15:20:03 by minskim2          #+#    #+#             */
-/*   Updated: 2021/03/27 15:25:04 by minskim2         ###   ########.fr       */
+/*   Created: 2021/03/27 15:16:43 by minskim2          #+#    #+#             */
+/*   Updated: 2021/03/29 05:20:11 by minskim2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_putchar(char c)
 {
-	char a;
-
-	a = 'a';
-	while (a <= 'z')
-	{
-		write(1, &a, 1);
-		a++;
-	}
+	write(1, &c, 1);
 }
