@@ -6,7 +6,7 @@
 /*   By: minskim2 <minskim2@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/29 05:14:52 by minskim2          #+#    #+#             */
-/*   Updated: 2021/03/29 05:19:47 by minskim2         ###   ########.fr       */
+/*   Updated: 2021/03/29 16:32:20 by minskim2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	stamp(char *buf, int len, int x, int dep)
 	if (dep == len)
 	{
 		write(1, buf, len);
-		write(1, &", ", 2);
+		write(1, ", ", 2);
 		return ;
 	}
 	if (x == 9)
